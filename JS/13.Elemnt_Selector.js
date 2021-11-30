@@ -4,7 +4,7 @@ console.log('13//JS');
 
 // Type:1:Single Element selectors.
 
-// 1st: Id element sleector :-
+// 1st: Id element selector :-
 let x = document.getElementById("dummyid1");
 // Prints whatever tag has this id(must be 1 and only).
 console.log("Element with id 'dummyid1':", x);
