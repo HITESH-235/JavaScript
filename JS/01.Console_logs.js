@@ -14,7 +14,7 @@ console.log({ hitesh: 'Maths', marks: 34 });
 console.table({ hitesh: 'Maths', marks: 34 });
 // objects in tabular form
 console.timeEnd('Your code took');
-// 1st and 1th line are pair codes used for calculating runtime of an area of code
+// 4th and 16th line are pair codes used for calculating runtime of an area of code
 console.warn('This is a waening');
 // Warnong
 // console.clear()
