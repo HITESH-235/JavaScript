@@ -30,6 +30,8 @@ console.log("These are the values' meaning printed by nodeType:");
 console.table(obj)
 let x2 = x.childNodes["childnode's type no.1", 1].nodeType;
 console.log(x2);
+// The number given output here tells us the type of childNode it is.
+// For example, if it is a text node, then the number '3' will be output.
 
 let x3 = document.querySelector("div.container");
 console.log("By absolute way:", x3.children[7].children[0].children[0]);
@@ -38,6 +40,7 @@ console.log("By absolute way:", x3.children[7].children[0].children[0]);
 // Now, if we wanna choose the first element out of the set,---
 console.log("If you just want first:", x3.children[7].children[0].firstElementChild);
 console.log("If you wanna know type of the childnode", x3.children[7].children[0].firstChild);
+// For some reasons, above line gives the first childNode as "text" instead of "Element".
 
 // Same Rule for these lines are applied:
 console.log("Opposite of firstElementChild", x3.children[7].children[0].lastElementChild);
@@ -46,7 +49,7 @@ console.log(x3.children[7].children[0].lastChild);
 console.log("No. of elements(children) in div.container: " + x3.childElementCount);
 // The childElementCount property returns the number of child elements an element has. Note: The returned value contains the number of child element nodes, not the number of all child nodes (like text and comment nodes). This property is read-only.
 
-console.log("Parent Node of div.logo:", x3.firstElementChild.nextElementSibling.parentNode);
-console.log("Next sibling of div.logo:", x3.firstElementChild.nextElementSibling);
-console.log("Type of next sibling of div.logo:", x3.firstElementChild.nextSibling);
-console.log("3rd sibling of div.logo:", x3.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling);
+console.log("Parent Node of h1#h1:", x3.firstElementChild.nextElementSibling.parentNode);
+console.log("Next sibling of h1#h1:", x3.firstElementChild.nextElementSibling);
+console.log("Type of next sibling of h1#h1:", x3.firstElementChild.nextSibling);
+console.log("3rd sibling of h1#h1:", x3.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling);
