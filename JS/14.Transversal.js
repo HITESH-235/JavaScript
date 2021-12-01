@@ -50,6 +50,6 @@ console.log("No. of elements(children) in div.container: " + x3.childElementCoun
 // The childElementCount property returns the number of child elements an element has. Note: The returned value contains the number of child element nodes, not the number of all child nodes (like text and comment nodes). This property is read-only.
 
 console.log("Parent Node of h1#h1:", x3.firstElementChild.nextElementSibling.parentNode);
-console.log("Next sibling of h1#h1:", x3.firstElementChild.nextElementSibling);
-console.log("Type of next sibling of h1#h1:", x3.firstElementChild.nextSibling);
+console.log("Next sibling(CHILDREN) of h1#h1:", x3.firstElementChild.nextElementSibling);
+console.log("Next sibling(CHILDNODE) of h1#h1:", x3.firstElementChild.nextSibling);
 console.log("3rd sibling of h1#h1:", x3.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling);
