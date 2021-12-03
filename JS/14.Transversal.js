@@ -1,6 +1,9 @@
 console.log('14//JS');
 // This file is about tranversal properties & methods.
 
+let s = document.querySelector("h1#h1");
+s.innerHTML = '14//JAVASCRIPT';
+
 let x = document.querySelector(".container");
 console.log(x.childNodes);
 // You already know what it is, but the point here is--
