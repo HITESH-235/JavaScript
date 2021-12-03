@@ -1,4 +1,7 @@
 console.log("17//JAVASCRIPT");
+let s = document.querySelector("h1#h1");
+s.innerHTML = '17//JAVASCRIPT';
+
 let y = document.querySelector("h1#h1");
 y.innerHTML = '17//JAVASCRIPT';
 // Making a form for use:-
