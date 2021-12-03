@@ -1,4 +1,8 @@
 console.log('16//JAVASCRIPT');
+
+let s = document.querySelector("h1#h1");
+s.innerHTML = '16//JAVASCRIPT';
+
 // This file is about events and event objects.
 // This will introduce how pages interact on certain action on screen, called Events.
 let y = document.querySelector("h1#h1");
