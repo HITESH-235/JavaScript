@@ -1,6 +1,9 @@
 console.log('15//JS');
 // This file is about creating, removing and replacing elements.
 
+let s = document.querySelector("h1#h1");
+s.innerHTML = '15//JAVASCRIPT';
+
 // CREATING--
 let element_x = document.createElement('li');
 // Creates an empty list element.
