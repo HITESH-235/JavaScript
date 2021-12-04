@@ -1,5 +1,9 @@
 console.log('16//JAVASCRIPT');
 
+// First read this:-
+// Element.append() has no return value, whereas Node.appendChild() returns the appended Node object. 
+// Element.append() can append several nodes and strings, whereas Node.appendChild() can only append one node.
+
 let s = document.querySelector("h1#h1");
 s.innerHTML = '16//JAVASCRIPT';
 
