@@ -54,13 +54,14 @@ element_x_2.addEventListener("click", function (x_2) {
           console.log("Distance from 1st place to where you clicked(x axis) :", variable_x_2, "px")
 
           variable_x_2 = x_2.offsetY;
-          console.log("Distance from leftmost pos of letter to where you clicked(Y axis) :", variable_x_2, "px")
+          console.log("Distance from topmost pos of letter to where you clicked(Y axis) :", variable_x_2, "px")
 
           variable_x_2 = x_2.clientX;
           console.log("Distance from top of screen to where you clicked(x axis) :", variable_x_2, "px")
 
           variable_x_2 = x_2.clientY;
           console.log("Distance from leftmost of screen to where you clicked(y axis) :", variable_x_2, "px")
+          console.log("BREAK");
 });
 
 
