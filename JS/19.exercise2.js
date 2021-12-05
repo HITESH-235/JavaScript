@@ -27,7 +27,7 @@ function make_it_edit(x) {
           let edit_obj = document.createElement('input')
           edit_obj.className = 'firstclass'
           edit_obj.setAttribute('type', 'text')
-          edit_obj.setAttribute('value', 'ClickHere')
+          edit_obj.setAttribute('placeholder', 'WriteHere')
           edit_obj.style.background = 'transparent'
           edit_obj.style.color = 'inherit'
           edit_obj.style.fontFamily = 'Agency FB'
@@ -44,5 +44,6 @@ function make_it_edit(x) {
                     document.querySelector("input.class").innerHTML = z;
                     localStorage.setItem('What-You-Wrote', document.querySelector("input.firstclass").value);
                     console.table(window.localStorage)
+                    document.querySelector("input.firstclass").value = "";
           }
 }
