@@ -51,7 +51,7 @@ localStorage.setItem('Modified_dummy', JSON.stringify(dummy_array));
 
 
 // SESSION STORAGE
-// Since the session storage keeps the data permanent, even if code is removed, and can only be refreshed after clearing to do so.
+// Since the local storage keeps the data permanent, even if code is removed, and can only be refreshed after clearing to do so.
 // But session storage is temporary and removes the data as we remove code.
 // Example :
 sessionStorage.setItem("DUMMY", "DUMMY-VALUE");
