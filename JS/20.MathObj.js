@@ -37,5 +37,5 @@ console.log("SIN INVERSE 1/2 =",Math.round(Math.asin(1/2)*(180/Math.PI)));
 // DO THAT WITH ANY TRIGONOMETRIC RATIO.
 console.log("ABSOLUTE VALUE OF (-34) =",Math.abs(-34));
 // WORKS LIKE MOD.
-console.log(Math.min(1,2,3,4,5,6,7,56,-45));
-console.log(Math.max(1,2,3,4,-5,6,7,56,-45));
+console.log("Smallest quantity in (1,2,3,4,-5,6,7,56,-45) =",Math.min(1,2,3,4,-5,6,7,56,-45));
+console.log("Greatest quantity in (1,2,3,4,-5,6,7,56,-45) =",Math.max(1,2,3,4,-5,6,7,56,-45));
