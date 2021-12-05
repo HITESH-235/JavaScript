@@ -1,5 +1,16 @@
 console.log('19//JAVASCRIPT');
 // Exercise 2
+let body = document.querySelector('div#container');
+let x = document.createElement('h1');
+x.id = 'h1';
+x.innerText = '19//JAVASCRIPT';
+let y = document.createElement('h2');
+y.id = 'about';
+y.innerHTML = '<u>EXERCISE-2</u>'
+let z = document.createElement('hr');
+body.appendChild(x);
+body.appendChild(y);
+body.appendChild(z);
 console.log("Create a div tag which when clicked turns editable and whenever clicked away(blur), save the note into local storage.")
 
 let main = document.createElement('div');
