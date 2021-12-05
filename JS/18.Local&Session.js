@@ -21,7 +21,7 @@ localStorage.setItem('Onion', '2500 grams');
 localStorage.setItem('Potato', '5000 grams');
 console.log('Local Storage In Console :')
 console.table(window.localStorage);
-// 10th line is how you can see that storage in console.
+// 19th line is how you can see that storage in console.
 // Note: local storage saves your work permanently, even if you remove a line of code.
 // So if you wanna clear the object, just simply go into appliction section, then click local storage, left-click the section where your file name appears now, select 'clear'.
 console.log('\nSome More Checks :');
