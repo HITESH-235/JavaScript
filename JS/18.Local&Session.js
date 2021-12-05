@@ -1,6 +1,16 @@
 console.log("18//JAVASCRIPT");
 // This file is about local storage and sessiom storage.
-
+let body = document.querySelector('div#container');
+let x = document.createElement('h1');
+x.id = 'h1';
+x.innerText = '18//JAVASCRIPT';
+let y = document.createElement('h2');
+y.id = 'about';
+y.innerHTML = '<u>Local & Session Storage</u>'
+let z = document.createElement('hr');
+body.appendChild(x);
+body.appendChild(y);
+body.appendChild(z);
 // First you need to know that there is a local storage in the 'Application' section.
 // We can access that object through certain functions in JS.
 
