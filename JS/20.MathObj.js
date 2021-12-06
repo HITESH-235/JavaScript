@@ -39,3 +39,11 @@ console.log("ABSOLUTE VALUE OF (-34) =",Math.abs(-34));
 // WORKS LIKE MOD.
 console.log("Smallest quantity in (1,2,3,4,-5,6,7,56,-45) =",Math.min(1,2,3,4,-5,6,7,56,-45));
 console.log("Greatest quantity in (1,2,3,4,-5,6,7,56,-45) =",Math.max(1,2,3,4,-5,6,7,56,-45));
+// PRINTING RANDOM NUMBERS:
+console.log("RANDOM RATIONAL NUMBERS BETWEEN 0 & 1 =",Math.random());
+// Always gives random rational numbers between 0 & 1.
+console.log("RANDOM RATIONAL NUMBERS BETWEEN 0 & 100 =",Math.random()*100);
+// Now you will get random rational number between 0 and 100.
+console.log("RANDOM INTEGERS BETWEEN 0 & 100 =",Math.round(Math.random()*100));
+console.log("RANDOM INTEGERS BETWEEN 50 & 100 =",Math.round(50+Math.random()*50));
+// NOW I EXPECT YOU CAN DO THIS FOR ANY RANGE.
