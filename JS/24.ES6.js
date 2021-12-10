@@ -16,6 +16,7 @@ body.appendChild(heading_2);
 body.appendChild(separator);
 head_element.appendChild(title);
 
+// CLASSES:
 class Student {
           constructor(x_name, x_class, x_age) {
                     this.name = x_name,
