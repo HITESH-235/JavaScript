@@ -34,3 +34,12 @@ class Student {
                     return a + b + c;
           };
 }
+
+// The static functions which doesn't requires any object:
+console.log(Student.add(2, 34, 56));
+
+// Normal functions:
+let new_obj = new Student("Hitesh", "IX B", 15);
+console.log(new_obj);
+console.log(new_obj.Intro());
+
