@@ -35,10 +35,10 @@ console.log("endsWith", x2.endsWith("ence"));
 console.log('includes', x2.includes('nother'));
 // Prints if given word of characters exist or not.
 
-console.log('substring "' + x2.substring(5, 15) + '"');
+console.log('substring "' + x2.substring(5,15) + '"');
 // Try writing (i) single number, (ii) -1(null effect), (iii) -3(null effect).
 
-console.log('slice "' + x2.slice(5, 15) + '"');
+console.log('slice "' + x2.slice(5,15) + '"');
 // slice is same as substring, but :-
 // try writing (i) single number, (ii) -1, (iii) (5, -15), (iv) -20.
 

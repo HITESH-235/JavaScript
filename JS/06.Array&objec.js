@@ -70,11 +70,12 @@ console.log(y0);
 // Note : this particular function when used on arrays, would not change y0 & y1, so we tricked it's disability and assigned them to y0 itself,  XD.
 
 let obj0 = {
-    first_name: "Hitesh",
-    website: "codon-Stream",
-    status: "active",
-    existence: true,
-    P_C_M: [97, 96, 99]
+          first_name: "Hitesh",
+          website: "codon-Stream",
+          status: "active",
+          existence: true,
+          P_C_M: [97, 96, 99],
+          1: "dgdgf"
 };
 // Objects are nothing but dictionaries of JS.
 // They can store keys of any data type.

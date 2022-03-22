@@ -65,11 +65,10 @@ console.log(x0.getAttribute('id'));
 console.log(x0.hasAttribute('href'));
 // gives answer in form of true or false.
 
-// 3: Removing-
+// 3: Removing- 
 x0.removeAttribute('id');
-console.log(x0);
 // Id attribute gets vanished.
 
 // 4: Setting-
-// x0.setAttribute("id","liId2")
-// console.log(x0);
+x0.setAttribute("hidden", true)
+console.log(x0);

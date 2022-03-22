@@ -13,7 +13,7 @@ console.log(datevar, "is now a", (typeof datevar))
 
 let i = 124;
 console.log(typeof (i.toString()));
-// // // "i.toString()" as a whole would be a string
+// "i.toString()" as a whole would be a string
 console.log(typeof i)
 // 'i' will still be a number
 // ".toString" here is another way of printing in string form
@@ -32,8 +32,8 @@ console.log("'true' has now been converted to " + (typeof bool) + " i.e.", bool)
 // Now, we saw number func changes to a number, but it also prints as it is with a dec num
 // for overcoming this problem, we can slice a dec num's decimal part by the func 'parseInt'
 
-let x = parseInt('34.2222');
-console.log("34.2222 has now been made " + x + ", which is a " + (typeof x))
+let x = parseInt('34.7222');
+console.log("34.7222 has now been made " + x + ", which is a " + (typeof x))
 
 let x0 = parseFloat("56.364365")
 console.log("the string '56.364365' has been converted to a float,", x0)
@@ -42,3 +42,4 @@ console.log("the string '56.364365' has been converted to a float,", x0)
 let x1 = 22.43543624362364576;
 console.log(x1.toFixed(5));
 // This func restricts or makes the decimal places to given input no.
+// But toFixed follows old method of estimation.

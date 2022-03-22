@@ -10,11 +10,11 @@ console.log(a);
 // Alert statement
 // alert("Hi, this is Hitesh!");
 
-// Prompt is also like alert, but it will give a box to write and stores it in variable a.
+// Prompt is also like alert, but it will give a box to write and stores it in variable a0.
 // a0 = prompt("This will destroy your computer.");
 // console.log(a0);
 
-// a2 = confirm("Are you sure?");
+// a1= confirm("Are you sure?");
 // console.log(a1);
 // Assigns a boolean value on ok/cancel.
 
@@ -22,7 +22,7 @@ console.log(a);
 // OR 
 a3 = innerHeight;
 a4 = innerWidth;
-console.log(a3, a4);
+console.log(a3,a4);
 // These properties tells the height/width of the page
 // These value gets changed when we change the screen size(just refresh the page)
 // outerHeight/outerWidth works the same
@@ -39,15 +39,14 @@ console.log(a7)
 a9 = location.href;
 console.log(a9)
 // Gives the link of current page.
-// location.href = "https://codon-stream.w3spaces.com"
+// location.href = "https://codonstream.w3spaces.com"
 // Opens this link
-a11 = location.toString();
+a11 = history;
+a12 = history.length;
+a13 = history.go(-1)
 console.log(a11)
-// Gives link in string form.
-a12 = history;
-a13 = history.length;
-a14 = history.go(-1)
-console.log(a12, a13, a14)
+console.log(a12)
+console.log(a13)
 // Gives some info of history
 // try history property writing another page's console
 // Length of histroy tells how many pages we opened

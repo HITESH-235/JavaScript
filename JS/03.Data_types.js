@@ -15,9 +15,9 @@ console.log("Data type is " + typeof num0);
 // literal are another object like arrays
 // they are the dictionary object of JS
 STmarks = {
-    hitesh: 100,
-    dummy1: 87,
-    dummy2: 46
+          hitesh: 100,
+          dummy1: 87,
+          dummy2: 46
 };
 console.log(STmarks, "type " + (typeof STmarks));
 

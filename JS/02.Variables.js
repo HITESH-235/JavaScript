@@ -13,15 +13,15 @@ console.log(title1);
 // 3.Are case sensitive
 // 4.Are changeable(takes the latest value of variable)
 // But 4th rule is not applied to a 'const'
-const websitename = "codon-stream";
+const websitename = "codonstream";
 // websitename = "jguwrghbwre";
 // Throws error if tried to change (like above line)
 console.log("Website's name :", websitename);
 
 {
-    let websitename = 'codon-stream';
-    websitename = "random name";
-    console.log("local(let) Website's name :", websitename);
+          let websitename = 'codon-stream';
+          websitename = "random name";
+          console.log("local(let) Website's name :", websitename);
 }
 // let is same as var, but it works only locally, it has nothing to do with outside world
 

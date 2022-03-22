@@ -20,6 +20,8 @@ console.log('Method 2');
 console.log("All links of class 'item':-");
 let link1 = document.getElementsByClassName("item");
 // 'lnik1 'now contains all the links in an object.
+console.log(link1);
+console.log(typeof link1);
 x = 1;
 Array.from(link1).forEach(function (element) {
           console.log(x++, element);

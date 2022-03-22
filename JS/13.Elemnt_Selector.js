@@ -31,7 +31,7 @@ console.log(x1);
 
 // 4th: doing css works with Id selector :-
 // Now we will see some codes which works for html & css.
-let x2 = document.getElementById("dummyid3")
+let x2 = document.getElementById("dummyid3");
 x2.style.color = "red";
 // Changes color of element of id 'dummyid3'.
 

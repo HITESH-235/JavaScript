@@ -21,7 +21,7 @@ console.log(parents)
 main.innerHTML = "<u>ClickHere</u>";
 main.addEventListener('click', make_it_edit);
 
-function make_it_edit(x) {
+function make_it_edit() {
           let modified = document.createElement('form')
           main.replaceWith(modified);
           let edit_obj = document.createElement('input')
