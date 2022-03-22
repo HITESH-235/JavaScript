@@ -19,24 +19,42 @@ parent_x.appendChild(form_x);
 // Created a button within script.
 
 let button_x = document.getElementById('button');
-// button_x.addEventListener('click', onClickEvent);
-// button_x.addEventListener('dblclick', onDblClickEvent);
+button_x.addEventListener('click', onClickEvent);
+button_x.addEventListener('dblclick', onDblClickEvent);
+button_x.addEventListener('mouseover', mouseOver);
+button_x.addEventListener('mouseout', mouseOut);
 button_x.addEventListener('mousedown', onAnyEvent);
-// function onClickEvent(x) {
-//     input_x.style.color = 'white';
-//     input_x.style.textDecoration = 'underline';
-//     Event_1 = document.createElement('div');
-//     Event_1.innerHTML = 'Thanks for clicking';
-//     parent_x.appendChild(Event_1);
-// };
+function onClickEvent(x) {
+    input_x.style.color = 'orange';
+    input_x.style.textDecoration = 'underline';
+    Event_1 = document.createElement('div');
+    Event_1.innerHTML = '<p style = "color: orange; display:inline;">Thanks for Clicking</p>';
+    parent_x.appendChild(Event_1);
+};
 
-// function onDblClickEvent(x) {
-//     input_x.style.color = 'yellow';
-//     input_x.style.textDecoration = 'underline';    
-//     Event_1 = document.createElement('div')
-//     Event_1.innerHTML = 'Thanks for Double Clicking';
-//     parent_x.appendChild(Event_1);
-// };
+function onDblClickEvent(x) {
+    input_x.style.color = 'greenyellow';
+    input_x.style.textDecoration = 'underline';    
+    Event_1 = document.createElement('div')
+    Event_1.innerHTML = '<p style = "color: greenyellow; display:inline;">Thanks for Double Clicking</p>';
+    parent_x.appendChild(Event_1);
+};
+
+function mouseOver(x) {
+    input_x.style.color = 'white';
+    input_x.style.textDecoration = 'underline';    
+    Event_1 = document.createElement('div')
+    Event_1.innerHTML = '<p style = "color: white; display:inline;">Thanks for Mouse Overing</p>';
+    parent_x.appendChild(Event_1);
+};
+
+function mouseOut(x) {
+        input_x.style.color = "yellow";
+        input_x.style.textDecoration = 'underline';    
+        Event_1 = document.createElement('div');
+        Event_1.innerHTML = '<p style = "color: yellow; display:inline;">Thanks for Mouse Outing</p>';
+        parent_x.appendChild(Event_1);
+};
 
 function onAnyEvent(x) {
     input_x.style.color = 'aqua'; 

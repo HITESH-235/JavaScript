@@ -34,27 +34,26 @@ parent_x.appendChild(element_x_2);
 element_x_2.innerHTML = "This is a dummy sentence-2.";
 element_x_2.id = "dummyId2";
 element_x_2.className = "dummyClass2"
+element_x_2.style.display = "inline"
 
 element_x_2.addEventListener("click", function (x_2) {
-          let variable_x_2 = x_2.target;
-          element_x_2.style.color = 'wheat'
-          element_x_2.style.textDecoration = 'underline'
-          // variable_x_2 = x_2.target.className
-          // console.log("Class of the element_x_2 :",variable_x_2);
+        console.log(x_2);
+          x_2.target.style.color = 'white'
+          x_2.target.style.textDecoration = 'underline'
+          x_2.target.style.background = "purple"
+          // console.log("Class of the element_x_2 :", x_2.target);
 
-          // variable_x_2 = x_2.target.id
-          // console.log("Id of the element_x_2 :",variable_x_2)
+          console.log("Id of the element_x_2 :", x_2.target.id)
 
           variable_x_2 = x_2.offsetX;
           console.log("Distance from 1st place to where you clicked(x axis) :", variable_x_2, "px")
 
           variable_x_2 = x_2.offsetY;
-          console.log("Distance from topmost pos of letter to where you clicked(Y axis) :", variable_x_2, "px")
+          console.log("Distance from topmost pos of letter to where you clicked(y axis) :", variable_x_2, "px")
 
           variable_x_2 = x_2.clientX;
           console.log("Distance from top of screen to where you clicked(x axis) :", variable_x_2, "px")
 
           variable_x_2 = x_2.clientY;
           console.log("Distance from topmost of screen to where you clicked(y axis) :", variable_x_2, "px");
-          console.log("BREAK");
 });
