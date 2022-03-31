@@ -26,18 +26,19 @@ console.log(obj_1);
 // These pre defined propertied lies in the "prototype" section you see in console.
 
 // But contructors are different:-
-function Obj_creator(giveName) {
+function Obj_creator(giveName, giveClass = 10) {
           this.name = giveName;
+          this.class = giveClass;
 };
 
-Obj_creator.prototype.anyName = function () {
-          console.log(this.name);
-};
-// Here we have added a new "pre difined property".
+Obj_creator.prototype.type = "Human";
+Obj_creator.prototype.gender = "Malex`";
+console.log(Obj_creator.prototype)
+// Here we have added a new "pre defined property".
 // You can see it in prototype section.
-let obj_2 = new Obj_creator('Rohan');
+let obj_2 = new Obj_creator('Rohan',12);
 console.log(obj_2);
-obj_2.anyName;
+// Now "Rohan" is in an object literal with the property of "human"(more properties can be added)
 
 // PROTOTYPE INHERITENCE
 // creating an object maker for employees:
@@ -66,8 +67,8 @@ let obj_x = Object.create(proto, {
           role: {value: "Employee", writable: true}
 });
 obj_x.changeName("Hitesh_2");
-// This "change" as we haven't used "writable", but...
-// obj_x.changeRole("Programmer");
+// This won't work as we haven't used "writable", but...
+obj_x.changeRole("Programmer");
 // This will work, you know why....
 console.log(obj_x);
 
@@ -87,12 +88,12 @@ console.log(hitesh_obj.slogan());
 // Another Example:
 function Programmer(name1, salary1, experience1, language) {
           Employee.call(this, name1, salary1, experience1);
-          // This is how call function is used.
+          // This is how call a contructor.
           this.language = language;
 };
-// Inheriting the property/properties of "Employee" into "Programmer":
-Programmer.prototype = Object.create(Employee.prototype);
-// "Object.create" actually builds new functions and adding them for prototype.
+// We can notice that the "Programmer" constructor function inherits the properties of the ‘Employee‘ constructor function along with a new parameter "language". 
+// Here, we called the Employee function using the call() function to pass the required parameters to the Employee constructor function. 
+
 let x_object = new Programmer("x_name",23000,3,"English");
 console.log(x_object);
 // Check its prototype.

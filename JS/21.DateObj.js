@@ -39,5 +39,6 @@ console.log("DAY OF THE GIVEN DATE --",my_birthday.getDay());
 // You can try many things like this.
 
 // MODIFYING .....
-// console.log(my_birthday.setDate(24));
+// my_birthday.setDate(24);
+// console.log(my_birthday);
 // Same as above, try anything...

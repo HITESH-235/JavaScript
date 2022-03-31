@@ -8,9 +8,9 @@ let y = document.createElement('h2');
 y.id = 'about';
 y.innerHTML = '<u>Local & Session Storage</u>'
 let z = document.createElement('hr');
-body.appendChild(x);
-body.appendChild(y);
-body.appendChild(z);
+body.append(x);
+body.append(y);
+body.append(z);
 // First you need to know that there is a local storage in the 'Application' section.
 // We can access that object through certain functions in JS.
 
@@ -28,6 +28,8 @@ console.log('\nSome More Checks :');
 // Now we will do some checks.
 console.log("Type of local storage object : " + typeof window.localStorage);
 console.log("Quantity of potato required : " + window.localStorage.Potato);
+// OR----
+// console.log("Quantity of potato required : " + window.localStorage["Potato"]);
 console.log("Type of ginger's(key's) value : " + typeof window.localStorage.Ginger);
 
 // Clearing :
@@ -51,15 +53,17 @@ localStorage.setItem('Modified_dummy', JSON.stringify(dummy_array));
 
 
 // SESSION STORAGE
-// Since the session storage keeps the data permanent, even if code is removed, and can only be refreshed after clearing to do so.
+
+// Since the local storage keeps the data permanent, even if code is removed, and can only be refreshed after clearing to do so.
 // But session storage is temporary and removes the data as we remove code.
 // Example :
 sessionStorage.setItem("DUMMY", "DUMMY-VALUE");
 console.table(window.sessionStorage)
+
 // Follow these steps to understand this object workings :
-// make line 57 a comment.
+// make line 60 a comment.
 // close the webpage opened.
 // Run the html page again.
-// the dummy key-value pair willbe found removed.
+// the dummy key-value pair will be found removed.
 
 // uncomment the line to get it again.

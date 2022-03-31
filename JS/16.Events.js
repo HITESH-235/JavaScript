@@ -56,4 +56,5 @@ element_x_2.addEventListener("click", function (x_2) {
 
           variable_x_2 = x_2.clientY;
           console.log("Distance from topmost of screen to where you clicked(y axis) :", variable_x_2, "px");
+          console.log("\n")
 });
